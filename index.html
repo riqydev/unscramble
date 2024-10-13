@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unscramble</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no,user-scalable=0"/>
+</head>
+<body onclick="startNewIfEnded()">
+    <main>
+        <header class="score-stuff">
+            <p class="score">0</p>
+            <p class="score__best">PB: </p>
+            <p class="timer">0s</p>
+        </header>
+        <div class="game__container">
+            <div class="game__box--word game__box">
+                <p class="word__ch1 ch">
+                    
+                </p>
+            </div> 
+            <div class="game__box--word game__box">
+                <p class="word__ch2 ch">
+                    
+                </p>
+            </div>
+            <div class="game__box--word game__box">
+                <p class="word__ch3 ch">
+                    
+                </p>
+            </div>
+            <div class="game__box--word game__box">
+                <p class="word__ch4 ch">
+                    
+                </p>
+            </div>
+            <div class="game__box--word game__box">
+                <p class="word__ch5 ch">
+                    
+                </p>
+            </div>
+
+            <div class="game__box--guess game__box" onclick="openKeyboard()">
+                <p class="guess__ch1 ch">
+
+                </p>
+            </div>
+            <div class="game__box--guess game__box" onclick="openKeyboard()">
+                <p class="guess__ch2 ch">
+
+                </p>
+            </div>
+            <div class="game__box--guess game__box" onclick="openKeyboard()">
+                <p class="guess__ch3 ch">
+
+                </p>
+            </div>
+            <div class="game__box--guess game__box" onclick="openKeyboard()">
+                <p class="guess__ch4 ch">
+
+                </p>
+            </div>
+            <div class="game__box--guess game__box" onclick="openKeyboard()">
+                <p class="guess__ch5 ch">
+
+                </p>
+            </div>
+            
+        </div>
+        <input type="text" class="keyboard__hack">
+    </main>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

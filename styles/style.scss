@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+$bg-color: #1B1717;
+$box-size: 4.1875rem;
+$box-outline: 2px solid #3A3A3C;
+
+$box-color-correct: #538D4E;
+$box-color-incorrect: #c60d0d;
+
+body{
+    background-color: $bg-color;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+}
+
+.score-stuff{
+    width:100%;
+    left:0;
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    font-weight:700;
+    font-size: 1.3rem;
+    color:#fff;
+}
+
+.score{
+    flex: 1;
+
+    &__best{
+        flex: 1;
+        text-align: center;
+    }
+}
+
+.timer{
+    flex: 1;
+    text-align:right;
+}
+
+.timer.safe{
+    color: #60ff80;
+    transition: color 1s;
+}
+
+.timer.less-safe{
+    //color: rgb(233, 255, 91);
+    color: #fff;
+   // transition: color 2s;
+}
+
+.timer.unsafe{
+    color: rgb(255, 2, 2);
+    transition: color 3s;
+}
+
+.game__container{
+    margin-top: 125px;
+    display:grid;
+    grid-template-rows: $box-size $box-size;
+    grid-template-columns: $box-size $box-size $box-size $box-size $box-size;
+    grid-gap:17px 5px;
+}
+
+.game__box{
+    border:$box-outline;
+    color: white;
+    font-weight: 800;
+    font-size: 2.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    background-color: transparent;
+    
+}
+
+
+.keyboard__hack{
+    position:absolute;
+    top: -1000px;
+    opacity: 0;
+}
+
+.game__box.correct{
+    background-color: $box-color-correct;
+    transition: background-color 0.75s;
+}
+
+.game__box.incorrect{
+    background-color: $box-color-incorrect;
+    transition: background-color 0.5s;
+}
+
