@@ -1,5 +1,5 @@
 # unscramble
-simple word game where the user needs to unscramble the letters on screen within a time limit.
+simple word game where the user needs to unscramble the letters on screen within a time limit. [live site url](https://riqydev.github.io/unscramble/)]
 
 # how to play
 start typing to input a guess, if you're on mobile you will need to click on the empty box to bring the keyboard up.
